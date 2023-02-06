@@ -185,7 +185,7 @@ function Login() {
           <div className="w-[368px] flex justify-center mt-[10px]">
             <Link
               to={"/forgotpassword"}
-              className="font-opensans text-[13.34px] text-[#03014C] text-center  cursor-pointer font-regular"
+              className="font-opensans text-[13.34px] text-[#03014C] text-center  cursor-pointer font-bold"
             >
               Forgotten Password?
             </Link>
