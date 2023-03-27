@@ -49,10 +49,10 @@ const Forgotpassword = () => {
     <div className="bg-[#F0F2F5] h-screen">
       {/* Logo part here */}
       <ToastContainer />
-      <div className="flex justify-center pt-[150px]">
+      <div className="flex justify-center pt-[100px] tablet:pt-[50px] laptop:pt-[100px] desktop:pt-[150px]">
         <picture>
           <img
-            className="w-[300px] "
+            className=" w-[150px] laptop:w-[200px] desktop:w-[300px] "
             src="images/cochatus.png"
             alt="logo"
             loading="lazy"
@@ -61,19 +61,19 @@ const Forgotpassword = () => {
       </div>
 
       {/* Input part here */}
-      <div className="flex justify-center ">
-        <div className="px-8 bg-white shadow-xl rounded-[15px]">
-          <div className=" mt-8">
-            <h2 className="font-opensans font-bold text-[#03014C] text-[25px] mb-1 ">
+      <div className="flex justify-center px-2.5 laptop:px-0  ">
+        <div className=" mt-[30px] tablet:mt-[15px] laptop:mt-0 px-8 bg-white shadow-xl rounded-[15px]">
+          <div className="  mt-8">
+            <h2 className="font-opensans font-bold text-[#03014C] desktop:text-[25px] mb-1 ">
               Reset Your Password
             </h2>
-            <p className=" w-[518px] font-nunito font-normal text-[20px] text-black opacity-80">
+            <p className="  desktop:w-[518px] font-nunito font-normal desktop:text-[20px] text-black opacity-80">
               Please enter your email address and reset your password.
             </p>
             <div className="mt-8">
               {emailError ? (
                 <input
-                  className=" border-[1.72px] border-solid rounded-lg border-red-600 w-[518px] h-20 pl-[52px] font-nunito font-semibold text-red-600 text-xl outline-none  mb-8  placeholder:text-red-600"
+                  className=" border-[1.72px] border-solid rounded-lg border-red-600 w-full laptop:w-[414px] py-[10px] laptop:py-[15px] desktop:w-[518px] desktop:h-20 px-[20px] laptop:px-[52px] font-nunito font-regular text-red-600 desktop:text-xl outline-none  mb-8  placeholder:text-red-600"
                   type="email"
                   value={email}
                   placeholder={emailError}
@@ -81,7 +81,7 @@ const Forgotpassword = () => {
                 />
               ) : (
                 <input
-                  className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-[518px] border-opacity-[0.3] h-20 pl-[52px] font-nunito font-semibold text-[#11175D] text-xl outline-1 outline-primary mb-8"
+                  className=" border-[1.72px] border-solid rounded-lg border-[#11175D] py-[10px] w-full laptop:w-[414px] laptop:py-[15px] desktop:w-[518px] border-opacity-[0.3] desktop:h-20 px-[20px] laptop:px-[52px] font-nunito font-regular text-[#11175D] desktop:text-xl outline-1 outline-primary mb-8"
                   type="email"
                   value={email}
                   placeholder="Email address"
@@ -92,13 +92,13 @@ const Forgotpassword = () => {
               <div className="flex flex-row justify-end mb-11">
                 <Link
                   to="/login"
-                  className=" px-[20px] py-[10px] text-[#4B4F56] bg-[#E4E6EB] rounded-[6px]  font-nunito font-bold text-[20.64px]"
+                  className=" px-[10px] laptop:px-[15px] desktop:px-[20px] py-[8px] laptop:py-[8px] desktop:py-[10px] text-[#4B4F56] bg-[#E4E6EB] rounded-[6px]  font-nunito font-bold text-[12px] laptop:text-[15px] desktop:text-[20.64px]"
                 >
                   Cancle
                 </Link>
 
                 <button
-                  className=" px-[20px] py-[10px] ml-5  bg-primary rounded-[6px]  font-nunito font-regular text-[20.64px] text-white"
+                  className="px-[10px] laptop:px-[15px] py-[8px] laptop:py-[8px]  desktop:px-[20px] desktop:py-[10px] ml-5  bg-primary rounded-[6px]  font-nunito font-regular text-[12px] laptop:text-[15px] desktop:text-[20.64px] text-white"
                   onClick={handleClick}
                 >
                   Reset password
