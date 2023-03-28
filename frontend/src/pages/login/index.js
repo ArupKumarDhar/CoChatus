@@ -80,7 +80,7 @@ function Login() {
       <ToastContainer />
 
       <div className="w-2/4 flex flex-col items-end">
-        <div className="mr-[69px] mt-[150px]">
+        <div className="mr-[69px] mt-[80px]">
           <h1 className="font-opensans font-bold text-[34px] text-[#11175D] mb-[60px]">
             Login to your account!
           </h1>
