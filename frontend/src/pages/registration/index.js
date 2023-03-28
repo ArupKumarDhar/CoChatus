@@ -112,7 +112,7 @@ function Registration() {
           <div className="relative">
             {emailError ? (
               <input
-                className=" border-[1.72px] border-solid rounded-lg border-red-600 w-[368px] h-20 pl-[52px] font-nunito font-semibold text-red-600 text-xl outline-none  mb-14  placeholder:text-red-600"
+                className=" border-[1.72px] border-solid rounded-lg border-red-600 w-[368px] h-20 pl-[52px] font-nunito font-regular text-red-600 text-xl outline-none  mb-14  placeholder:text-red-600"
                 type="email"
                 value={email}
                 placeholder={emailError}
@@ -120,7 +120,7 @@ function Registration() {
               />
             ) : (
               <input
-                className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-[368px] border-opacity-[0.3] h-20 pl-[52px] font-nunito font-semibold text-[#11175D] text-xl outline-1 outline-primary mb-14"
+                className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-[368px] border-opacity-[0.3] h-20 pl-[52px] font-nunito regular text-[#11175D] text-xl outline-1 outline-primary mb-14"
                 type="email"
                 value={email}
                 onChange={handleEmail}
@@ -142,7 +142,7 @@ function Registration() {
           <div className="relative">
             {nameError ? (
               <input
-                className=" border-[1.72px] border-solid rounded-lg border-red-600 w-[368px]  h-20 pl-[52px] font-nunito font-semibold text-red-600 text-xl  mb-14  outline-none placeholder:text-red-600 "
+                className=" border-[1.72px] border-solid rounded-lg border-red-600 w-[368px]  h-20 pl-[52px] font-nunito regular text-red-600 text-xl  mb-14  outline-none placeholder:text-red-600 "
                 placeholder={nameError}
                 type="text"
                 value={name}
@@ -150,7 +150,7 @@ function Registration() {
               />
             ) : (
               <input
-                className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-[368px] border-opacity-[0.3] h-20 pl-[52px] font-nunito font-semibold text-[#11175D] text-xl  mb-14 outline-primary outline-1 "
+                className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-[368px] border-opacity-[0.3] h-20 pl-[52px] font-nunito regular text-[#11175D] text-xl  mb-14 outline-primary outline-1 "
                 type="text"
                 value={name}
                 onChange={handleName}
@@ -171,7 +171,7 @@ function Registration() {
           <div className="relative w-[368px]">
             {passwordError ? (
               <input
-                className=" border-[1.72px] border-solid rounded-lg border-red-600 w-[368px] h-20 pl-[52px] font-nunito font-semibold text-red-600 text-xl  mb-14  outline-none placeholder:text-red-600"
+                className=" border-[1.72px] border-solid rounded-lg border-red-600 w-[368px] h-20 pl-[52px] font-nunito regular text-red-600 text-xl  mb-14  outline-none placeholder:text-red-600"
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 placeholder={passwordError}
@@ -179,7 +179,7 @@ function Registration() {
               />
             ) : (
               <input
-                className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-[368px] border-opacity-[0.3] h-20 pl-[52px] pr-[60px] font-nunito font-semibold text-[#11175D] text-xl  mb-14 outline-primary outline-1"
+                className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-[368px] border-opacity-[0.3] h-20 pl-[52px] pr-[60px] font-nunito regular text-[#11175D] text-xl  mb-14 outline-primary outline-1"
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 onChange={handlePassword}
