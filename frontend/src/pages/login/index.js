@@ -98,7 +98,7 @@ function Login() {
           <div className="relative">
             {emailError ? (
               <input
-                className="border-b-[1.72px] pr-[60px] border-solid  border-red-600 w-[368px] h-20  font-nunito font-semibold text-red-600 text-xl outline-none  mb-14  placeholder:text-red-600"
+                className="border-b-[1.72px] pr-[60px] border-solid  border-red-600 w-[368px] h-20  font-nunito font-regular text-red-600 text-xl outline-none  mb-14  placeholder:text-red-600"
                 type="email"
                 value={email}
                 placeholder={emailError}
@@ -106,7 +106,7 @@ function Login() {
               />
             ) : (
               <input
-                className=" border-b-[1.72px] border-solid pr-[60px]  border-[#11175D] w-[368px] border-opacity-[0.3] h-20  font-nunito font-semibold text-[#11175D] text-xl outline-none mb-14 "
+                className=" border-b-[1.72px] border-solid pr-[60px]  border-[#11175D] w-[368px] border-opacity-[0.3] h-20  font-nunito font-regular text-[#11175D] text-xl outline-none mb-14 "
                 type="email"
                 value={email}
                 onChange={handleEmail}
@@ -128,7 +128,7 @@ function Login() {
           <div className="relative w-[368px]">
             {passwordError ? (
               <input
-                className=" border-b-[1.72px] pr-[60px] border-solid border-red-600 w-[368px] h-20  font-nunito font-semibold text-red-600 text-xl  mb-14  outline-none placeholder:text-red-600"
+                className=" border-b-[1.72px] pr-[60px] border-solid border-red-600 w-[368px] h-20  font-nunito font-regular text-red-600 text-xl  mb-14  outline-none placeholder:text-red-600"
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 placeholder={passwordError}
@@ -136,7 +136,7 @@ function Login() {
               />
             ) : (
               <input
-                className=" border-b-[1.72px] border-solid pr-[60px]  border-[#11175D] w-[368px] border-opacity-[0.3] h-20  font-nunito font-semibold text-[#11175D] text-xl outline-none mb-14 "
+                className=" border-b-[1.72px] border-solid pr-[60px]  border-[#11175D] w-[368px] border-opacity-[0.3] h-20  font-nunito font-regular text-[#11175D] text-xl outline-none mb-14 "
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 onChange={handlePassword}
