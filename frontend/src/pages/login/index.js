@@ -79,9 +79,11 @@ function Login() {
       {/* Left-side */}
       <ToastContainer />
 
+
       <div className="  w-full md:w-2/4 md:flex md:flex-col md:items-end">
         <div className="mx-2.5 laptop:mx-0 desktop:mx-0 md:mr-[80px] laptop:mr-[110px] desktop:mr-[140px] mt-[100px] md:mt-[60px] laptop:mt-[80px] desktop:mt-[120px]">
           <h1 className="font-nunito font-bold mb-[50px] text-[25px] text-left laptop:text-[25px] desktop:text-[34px] text-[#11175D]  desktop:mb-[50px]">
+
             Login to your account!
           </h1>
           {/* Login with google account */}
@@ -98,7 +100,9 @@ function Login() {
           <div className="relative">
             {emailError ? (
               <input
+
                 className="border-b-[1.72px] pr-[40px] laptop:pr-[40px] desktop:pr-[60px] border-solid  border-red-600 w-full laptop:w-[280px] desktop:w-[368px] py-[10px] laptop:py-[15px] desktop:h-20  font-nunito font-regular text-red-600 text-[12px] laptop:text-[15px] desktop:text-xl outline-none  mb-8 laptop:mb-10  desktop:mb-14  placeholder:text-red-600"
+
                 type="email"
                 value={email}
                 placeholder={emailError}
@@ -106,7 +110,9 @@ function Login() {
               />
             ) : (
               <input
+
                 className=" border-b-[1.72px] border-solid pr-[40px] laptop:pr-[40px] desktop:pr-[60px]  border-[#11175D] w-full laptop:w-[280px] desktop:w-[368px] py-[10px] laptop:py-[15px] desktop:h-20 border-opacity-[0.3]  font-nunito font-regular text-[#11175D] text-[12px] laptop:text-[15px] desktop:text-xl outline-none mb-8 laptop:mb-10  desktop:mb-14 "
+
                 type="email"
                 value={email}
                 onChange={handleEmail}
@@ -128,7 +134,9 @@ function Login() {
           <div className="relative w-full laptop:w-[280px] desktop:w-[368px]">
             {passwordError ? (
               <input
+
                 className=" border-b-[1.72px] pr-[40px] laptop:pr-[40px] desktop:pr-[60px] border-solid border-red-600 w-full laptop:w-[280px] desktop:w-[368px] py-[10px] laptop:py-[15px] desktop:h-20  font-nunito font-regular text-red-600 text-[12px] laptop:text-[15px] desktop:text-xl mb-8 laptop:mb-10  desktop:mb-14  outline-none placeholder:text-red-600"
+
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 placeholder={passwordError}
@@ -136,7 +144,9 @@ function Login() {
               />
             ) : (
               <input
+
                 className=" border-b-[1.72px] border-solid pr-[40px] laptop:pr-[40px] desktop:pr-[60px]  border-[#11175D] w-full laptop:w-[280px] desktop:w-[368px] py-[10px] laptop:py-[15px] desktop:h-20 border-opacity-[0.3]  font-nunito font-regular text-[#11175D] text-[12px] laptop:text-[15px] desktop:text-xl outline-none mb-8 laptop:mb-10  desktop:mb-14 "
+
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 onChange={handlePassword}

@@ -99,9 +99,11 @@ function Registration() {
     <div className="md:flex">
       {/* Left-side */}
       <ToastContainer />
+
       <div className="w-full px-2.5 md:px-0 md:w-2/4 md:flex md:flex-col md:items-end">
         <div className="  md:mr-[50px] laptop:mr-[69px] mt-[100px] md:mt-[50px] laptop:mt-[100px] desktop:mt-[150px]">
           <h1 className="font-nunito font-bold text-[20px] laptop:text-[25px] desktop:text-[34px] text-[#11175D]  desktop:mb-[13px]">
+
             Get started with easily register
           </h1>
           <p className="font-nunito font-regular text-[15px] laptop:text-[20.34px] text-[#000000] opacity-[0.5] mb-[30px] md:mb-[40px]">
@@ -112,7 +114,9 @@ function Registration() {
           <div className="relative mt-[80px] md:mt-0">
             {emailError ? (
               <input
+
                 className=" border-[1.72px] border-solid rounded-lg border-red-600 w-full laptop:w-[280px] desktop:w-[368px]  py-[10px] md:py-[15px] px-[30px] desktop:h-20 desktop:pl-[52px] font-nunito font-regular text-red-600 text-[13px] laptop:text-[15px] desktop:text-xl outline-none mb-8 placeholder:text-red-600"
+
                 type="email"
                 value={email}
                 placeholder={emailError}
@@ -120,7 +124,9 @@ function Registration() {
               />
             ) : (
               <input
+
                 className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-full laptop:w-[280px] desktop:w-[368px] border-opacity-[0.3] py-[10px] md:py-[15px] px-[30px] desktop:h-20 desktop:pl-[52px] font-nunito font-regular text-[#11175D] text-[13px] laptop:text-[15px] desktop:text-xl outline-1 outline-primary mb-8 "
+
                 type="email"
                 value={email}
                 onChange={handleEmail}
@@ -142,7 +148,9 @@ function Registration() {
           <div className="relative">
             {nameError ? (
               <input
+
                 className=" border-[1.72px] border-solid rounded-lg border-red-600 w-full laptop:w-[280px] desktop:w-[368px]  py-[10px] md:py-[15px] px-[30px] desktop:h-20 desktop:pl-[52px] font-nunito font-regular text-red-600 text-[13px] laptop:text-[15px] desktop:text-xl outline-none mb-8 placeholder:text-red-600 "
+
                 placeholder={nameError}
                 type="text"
                 value={name}
@@ -150,7 +158,9 @@ function Registration() {
               />
             ) : (
               <input
+
                 className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-full laptop:w-[280px] desktop:w-[368px] border-opacity-[0.3] py-[10px] md:py-[15px] px-[30px] desktop:h-20 desktop:pl-[52px] font-nunito font-regular text-[#11175D] text-[13px] laptop:text-[15px] desktop:text-xl outline-1 outline-primary mb-8 "
+
                 type="text"
                 value={name}
                 onChange={handleName}
@@ -171,7 +181,9 @@ function Registration() {
           <div className="relative w-full laptop:w-[280px] desktop:w-[368px]">
             {passwordError ? (
               <input
+
                 className=" border-[1.72px] border-solid rounded-lg border-red-600 w-full laptop:w-[280px] desktop:w-[368px]  py-[10px] md:py-[15px] px-[30px] desktop:h-20 desktop:pl-[52px] laptop:pr-[48px] desktop:pr-[63px] font-nunito font-regular text-red-600 text-[13px] laptop:text-[15px] desktop:text-xl outline-none mb-8 placeholder:text-red-600 "
+
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 placeholder={passwordError}
@@ -179,7 +191,9 @@ function Registration() {
               />
             ) : (
               <input
+
                 className=" border-[1.72px] border-solid rounded-lg border-[#11175D] w-full laptop:w-[280px] desktop:w-[368px] border-opacity-[0.3] py-[10px] md:py-[15px] px-[30px] desktop:h-20 laptop:pr-[48px] desktop:pl-[52px] desktop:pr-[63px] font-nunito font-regular text-[#11175D] text-[13px] laptop:text-[15px] desktop:text-xl outline-1 outline-primary mb-8 "
+
                 type={!showpassword ? "text" : "password"}
                 value={password}
                 onChange={handlePassword}
